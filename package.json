@@ -1,0 +1,42 @@
+{
+  "name": "price-iot-cloud",
+  "private": true,
+  "version": "2.0.2",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:sandbox": "cross-env SANDBOX=true vite",
+    "build": "tsc -b && vite build",
+    "build:sandbox": "cross-env SANDBOX=true tsc -b && cross-env SANDBOX=true vite build",
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@types/react-grid-layout": "^1.3.6",
+    "canvas": "^3.2.3",
+    "firebase": "^12.15.0",
+    "framer-motion": "^12.42.0",
+    "lodash": "^4.18.1",
+    "lucide-react": "^1.21.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-grid-layout": "^2.2.3",
+    "react-resizable": "^4.0.2",
+    "react-router-dom": "^7.18.0",
+    "recharts": "^3.9.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.1",
+    "@types/lodash": "^4.17.24",
+    "@types/node": "^24.13.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.2",
+    "cross-env": "^10.1.0",
+    "oxlint": "^1.69.0",
+    "tailwindcss": "^4.3.1",
+    "typescript": "~6.0.2",
+    "vite": "^8.1.0",
+    "vite-plugin-pwa": "^1.3.0"
+  }
+}

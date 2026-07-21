@@ -1,0 +1,1 @@
+- Before starting a new feature or patch, if the current version is stable and verified, create a zip backup of the project. Keep ONLY ONE stable zip backup at a time by deleting the previous zip backup when creating a new one.

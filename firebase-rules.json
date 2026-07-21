@@ -1,0 +1,50 @@
+{
+  "rules": {
+    "projects": {
+      ".read": "auth != null && !auth.email.matches(/.*@device\\.local$/)",
+      ".write": "auth != null && !auth.email.matches(/.*@device\\.local$/)",
+      "$projectId": {
+        ".read": "auth != null && auth.email == ('device' + $projectId + '@device.local').toLowerCase()",
+        ".write": "auth != null && auth.email == ('device' + $projectId + '@device.local').toLowerCase()"
+      }
+    },
+
+    "widgets": {
+      "$projectId": {
+        ".read": "auth != null && (!auth.email.matches(/.*@device\\.local$/) || auth.email == ('device' + $projectId + '@device.local').toLowerCase())",
+        ".write": "auth != null && !auth.email.matches(/.*@device\\.local$/)"
+      }
+    },
+
+    "datastreams": {
+      "$projectId": {
+        ".read": "auth != null && (!auth.email.matches(/.*@device\\.local$/) || auth.email == ('device' + $projectId + '@device.local').toLowerCase())",
+        ".write": "auth != null && !auth.email.matches(/.*@device\\.local$/)"
+      }
+    },
+
+    "settings": {
+      "$projectId": {
+        ".read": "auth != null && (!auth.email.matches(/.*@device\\.local$/) || auth.email == ('device' + $projectId + '@device.local').toLowerCase())",
+        ".write": "auth != null && (!auth.email.matches(/.*@device\\.local$/) || auth.email == ('device' + $projectId + '@device.local').toLowerCase())"
+      }
+    },
+
+    "pins": {
+      "$projectId": {
+        ".read": "auth != null && (!auth.email.matches(/.*@device\\.local$/) || auth.email == ('device' + $projectId + '@device.local').toLowerCase())",
+        ".write": "auth != null && (!auth.email.matches(/.*@device\\.local$/) || auth.email == ('device' + $projectId + '@device.local').toLowerCase())"
+      }
+    },
+
+    "history": {
+      "$projectId": {
+        ".read": "auth != null && (!auth.email.matches(/.*@device\\.local$/) || auth.email == ('device' + $projectId + '@device.local').toLowerCase())",
+        ".write": "auth != null && (!auth.email.matches(/.*@device\\.local$/) || auth.email == ('device' + $projectId + '@device.local').toLowerCase())",
+        "$pin": {
+          ".indexOn": ["timestamp"]
+        }
+      }
+    }
+  }
+}
