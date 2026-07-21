@@ -51,7 +51,7 @@ export default function SetupGuideModal({ open, onClose }: Props) {
                       In your Firebase project console, look for the left sidebar and click on <strong className="text-[#a0a0a0]">Authentication</strong>.
                     </p>
                     <div className="rounded-lg overflow-hidden border border-[#2a2a2a]">
-                      <img src="/images/guide/step1.png?v=4" alt="Step 1" className="w-full h-auto" />
+                      <img src="/images/guide/step1.png" alt="Step 1" className="w-full h-auto" />
                     </div>
                   </div>
                 </div>
@@ -68,7 +68,7 @@ export default function SetupGuideModal({ open, onClose }: Props) {
                       In the Users tab, find and click the blue <strong className="text-[#a0a0a0]">Add user</strong> button.
                     </p>
                     <div className="rounded-lg overflow-hidden border border-[#2a2a2a]">
-                      <img src="/images/guide/step2.png?v=4" alt="Step 2" className="w-full h-auto" />
+                      <img src="/images/guide/step2.png" alt="Step 2" className="w-full h-auto" />
                     </div>
                   </div>
                 </div>
@@ -85,7 +85,7 @@ export default function SetupGuideModal({ open, onClose }: Props) {
                       Copy the <strong className="text-[#a0a0a0]">Auth Email</strong> and <strong className="text-[#a0a0a0]">Auth Token</strong> from the Device Info page, and paste them into the respective fields.
                     </p>
                     <div className="rounded-lg overflow-hidden border border-[#2a2a2a]">
-                      <img src="/images/guide/step3.png?v=4" alt="Step 3" className="w-full h-auto" />
+                      <img src="/images/guide/step3.png" alt="Step 3" className="w-full h-auto" />
                     </div>
                   </div>
                 </div>
@@ -102,7 +102,7 @@ export default function SetupGuideModal({ open, onClose }: Props) {
                       Click the <strong className="text-[#a0a0a0]">Add user</strong> button to confirm and create the account.
                     </p>
                     <div className="rounded-lg overflow-hidden border border-[#2a2a2a]">
-                      <img src="/images/guide/step4.png?v=4" alt="Step 4" className="w-full h-auto" />
+                      <img src="/images/guide/step4.png" alt="Step 4" className="w-full h-auto" />
                     </div>
                     <div className="mt-3 flex items-start gap-2 text-[11px] text-[#f59e0b] bg-[#f59e0b]/10 px-3 py-2.5 rounded-lg">
                       <Code2 className="w-4 h-4 mt-0.5 shrink-0" />
